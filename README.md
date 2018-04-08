@@ -10,10 +10,12 @@ To install it, you will need to follow a few steps.
 __- Clone it onto your computer.__  
 First you want to change directory *in your terminal*, to the folder where you want to install the application.  
 You can do so by running `cd` with the folder, in your terminal. For example:  
-`cd server` (if the folder is called *server*)
+```cd server``` (if the folder is called *server*)
 
 After this you want the clone the repository. You can doing by running the following command in your terminal:
-`clone https://github.com/jessiemasonx/be-assessment-2.git`
+```
+clone https://github.com/jessiemasonx/be-assessment-2.git
+```
 
 __- Download extra's.__  
 If you don't have [node](https://github.com/cmda-be/course-17-18/blob/master/week-2.md#node) installed, install it.  
