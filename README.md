@@ -3,6 +3,10 @@
 
 This is an application for anyone with the age between 18 and 30 who is looking for someone to spend the rest of his/her life with. HeartBeat focuses on someone's taste in music. In that way you can find someone who shares the same interests musically and the rest will follow. 
 
+- [How to install](https://github.com/jessiemasonx/be-assessment-2/blob/master/README.md#how-to-install)
+- [Start Server](https://github.com/jessiemasonx/be-assessment-2/blob/master/README.md#start-server)
+
+
 ## How to install
 
 To install it, you will need to follow a few steps.
