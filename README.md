@@ -5,6 +5,11 @@ This is an application for anyone with the age between 18 and 30 who is looking 
 
 - [How to install](https://github.com/jessiemasonx/be-assessment-2/blob/master/README.md#how-to-install)
 - [Start Server](https://github.com/jessiemasonx/be-assessment-2/blob/master/README.md#start-server)
+- [Structure]()
+- [Database]()
+- [To Do List]()
+- [Personal Opinion]()
+
 
 
 ## How to install
