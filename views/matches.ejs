@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="styles/matches.css">
+	<link rel="stylesheet" href="styles/styles.css">
+<title>HeartBeart</title>
+</head>
+<body>
+	<header>
+	<img id="hamburger" src="styles/images/menu.png" alt="menu">
+		<h2>HeartBeat</h2>
+		<a href="/logout">Log uit</a>
+		</header>
+		<div id="nav">
+			<a href="/matches">Matches</a>
+			<a href="/">Home</a>
+			<% if (session && session.loggedIn) { %>
+			<a href="/myprofile/<%= session.user.id %>">Profiel</a>
+			<% } %>
+			<a href="/login">Login</a>
+		</div>
+	<button id="infoknop"><img src="styles/images/info.png" alt="asd"></button>
+	<h1>Matches</h1>
+	<div id="popup" class="visible">
+		<p>De profielfoto van je matches krijg je pas te zien nadat je een paar dagen met ze hebt gepraat.</p>
+		<button id="ok">OK</button>
+	</div>
+	<main>
+		<% data.forEach(function(match){ %>
+	<a href="/profile/<%= match.id %>">
+		<% if (match.img) { %>
+		<img src="../styles/images/uploads/<%= match.img %>" alt="profielfoto">
+		<% } else { %>
+	<img src="styles/images/profile/profileblank.png" alt="persoon">
+		<% } %>	
+	<p><%= match.name %></p><p><%= match.age %> jaar</p>
+	</a>
+	<% }) %>
+	</main>
+	<script src="java/java2.js"></script>
+	<script src="java/java.js"></script>
+</body>
+</html>

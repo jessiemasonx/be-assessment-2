@@ -1,0 +1,51 @@
+/*vind iemand die echt bij je past*/
+p:first-of-type {
+	text-align: center;
+	margin-top: 3rem;
+	font-size: 20px;
+}
+
+/*bij heartbeat vind...*/
+p:last-of-type {
+	width: 75%;
+	margin: auto;
+	font-size: 16px;
+	margin-top: 4rem;
+}
+
+/*de 2 linkjes onderen*/
+main a {
+	text-align: center;
+	text-decoration: none;
+	display: block;
+}
+
+/*ik heb al een account*/
+main a:last-of-type {
+	color: white;
+	text-align: center;
+	margin-top: 0.5rem;
+}
+
+/*ik heb al een account met hover*/
+main a:last-of-type:hover{
+	color: #1DB954;
+}
+
+/*probeer het uit*/
+main a:first-of-type {
+	color: #1DB954;
+	font-weight: 620;
+	font-size: 25px;
+	border-radius: 7px;
+	width: 234px;
+	padding: 1rem;
+	background-color: white;
+	margin: 12rem auto 0 auto;
+}
+
+/*probeer het uit met hover*/
+main a:first-of-type:hover{
+	color: white;
+	background-color: #1DB954;
+}

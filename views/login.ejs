@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="styles/inschrijven.css">
+	<link rel="stylesheet" href="styles/styles.css">
+	<title>HeartBeart</title>
+</head>
+<body>
+	<header>
+		<% if (session && session.loggedIn) { %>
+	<img id="hamburger" src="styles/images/menu.png" alt="menu">
+	<% } %>
+	<h2>HeartBeat</h2>
+		<% if (session && session.loggedIn) { %>
+	<a href="/logout">Log uit</a>
+	<% } %>
+		</header>
+		<div id="nav">
+			<a href="/matches">Matches</a>
+			<a href="/">Home</a>
+			<% if (session && session.loggedIn) { %>
+			<a href="/myprofile/ <%= session.user.id %>">Profiel</a>
+			<% } %>
+			<a href="/login">Login</a>
+		</div>
+	<main>
+		<h1>Login</h1>
+		<form action="/portal" method="POST">
+
+			<label for="email">E-Mail
+				<input type="email" id="email" name="email" value="jessie@hoi.nl">
+			</label>
+			<label for="ww">Wachtwoord
+				<input type="password" id="ww" name="password" value="hoi">
+			</label>
+			<button type="submit">Login</button>
+		</form>
+	</main>
+<script src="java/java2.js"></script>
+</body>
+
+</html>

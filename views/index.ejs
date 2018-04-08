@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="styles/home.css">
+	<link rel="stylesheet" href="styles/styles.css">
+<title>HeartBeart</title>
+</head>
+<body>
+<header>
+		<% if (session && session.loggedIn) { %>
+<img id="hamburger" src="styles/images/menu.png" alt="menu">
+	<% } %>
+	<h2>HeartBeat</h2>
+		<% if (session && session.loggedIn) { %>
+	<a href="/logout">Log uit</a>
+	<% } %>
+	</header>
+	<div id="nav">
+		<a href="/matches">Matches</a>
+		<a href="/">Home</a>
+		<% if (session && session.loggedIn) { %>
+		<a href="r2">Profiel</a>
+		<% } %>
+		<a href="/login">Login</a>
+	</div>
+	<main>
+		<p>Vind iemand die <i>echt</i> bij je past.</p>
+		<p>Bij HeartBeat vind je je ultieme partner op basis van je muzieksmaak.</p>
+		<a href="/start">probeer het uit</a>
+		<a href="/login">ik heb al een account</a>
+	</main>
+	<script src="java/java2.js"></script>
+</body>
+</html>

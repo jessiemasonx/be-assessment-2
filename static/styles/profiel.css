@@ -1,0 +1,123 @@
+main > img {
+	width: 10rem;
+	margin: 3rem auto 0 auto;
+	display: block;
+	border-style: solid;
+	border-color: white;
+}
+
+h1 {
+	font-size: 2rem;
+}
+
+h3 {
+	text-align: center;
+	margin-top: 2rem;
+}
+p {
+	text-align: center;
+}
+
+p:first-of-type {
+	margin-top: 1.4rem;
+}
+
+section {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	margin-top: 1rem;
+}
+
+section img {
+	height: 7rem;
+}
+
+main a {
+	color: #1DB954;
+	font-weight: 620;
+	font-size: 25px;
+	border-radius: 7px;
+	width: 234px;
+	padding: 0.34rem;
+	background-color: white;
+	margin: 2rem auto 1rem auto;
+	text-align: center;
+	text-decoration: none;
+	display: block;
+}
+
+main a:hover {
+	color: white;
+	background-color: black;
+}
+
+form {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	/* width: 10rem; */
+	text-align: center;
+	margin-top: 3rem;
+}
+
+#send {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 1rem;
+	width: 6rem;
+}
+
+article {
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 1rem;
+	background-color: grey;
+	width: 10rem;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+article h2:first-of-type {
+	font-size: 15px;
+	background-color: black;
+	height: 1.5rem;
+	width: 1.5rem;
+	border-radius: 10px;
+	margin: 0;
+}
+
+article h2:last-of-type {
+	/* width: 2rem; */
+	margin: 0;
+}
+
+#message {
+	width: 20rem;
+	padding-bottom: 10rem;
+	font-size: 1rem;
+	border-radius: 5px;
+	border: solid black 4px;
+}
+
+#delete {
+	color: white;
+	font-weight: 620;
+	font-size: 15px;
+	border-radius: 7px;
+	width: 234px;
+	padding: 0.4rem 0.2rem;
+	background-color: #1DB954;
+	margin: 1rem auto 2rem auto;
+	text-align: center;
+	text-decoration: none;
+	display: block;
+}
+
+#delete:hover {
+	color: #1DB954;
+	background-color: black;
+}
