@@ -3,6 +3,9 @@
 
 This is an application for anyone with the age between 18 and 30 who is looking for someone to spend the rest of his/her life with. HeartBeat focuses on someone's taste in music. In that way you can find someone who shares the same interests musically and the rest will follow. 
 
+<img src="https://github.com/jessiemasonx/images/blob/master/home.png" width="250"> <img src="https://github.com/jessiemasonx/images/blob/master/genre.png" width="250">
+
+- [Description](https://github.com/jessiemasonx/be-assessment-2/blob/master/README.md#description)
 - [How to install](https://github.com/jessiemasonx/be-assessment-2/blob/master/README.md#how-to-install)
 - [Start Server](https://github.com/jessiemasonx/be-assessment-2/blob/master/README.md#start-server)
 - [Structure]()
@@ -10,7 +13,9 @@ This is an application for anyone with the age between 18 and 30 who is looking 
 - [To Do List]()
 - [Personal Opinion]()
 
+## Description
 
+As I mentioned before, HeartBeat is an application for anyone with the age between 18 and 30 who is looking for someone to spend the rest of his/her life with, and it focuses on someone's taste in music. While that's been said, let's take a look at every page of the website and see what you can do there. I'll give you a little tour around 
 
 ## How to install
 
@@ -47,7 +52,6 @@ Now you're able to start the server. Do this by running the following command:
 ```
 node index.js
 ```
-
 
 
 
