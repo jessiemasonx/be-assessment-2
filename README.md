@@ -180,6 +180,7 @@ Here you can see all my plans I had before I started the project, and which of t
 - [x] Add a readme.md
 - [x] Make a repository on github and put everything in it
 - [x] Add a database and tables
+- [x] Add a license
 - [ ] Hash passwords
 
 ## License
