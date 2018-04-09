@@ -43,7 +43,7 @@ You can do so by running `cd` with the folder, in your terminal. For example:
 
 After this you want the clone the repository. You can doing by running the following command in your terminal:
 ```
-clone https://github.com/jessiemasonx/be-assessment-2.git
+git clone https://github.com/jessiemasonx/be-assessment-2.git
 ```
 
 __- Download extra's.__  
