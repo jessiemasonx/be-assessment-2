@@ -19,14 +19,20 @@ As I mentioned before, HeartBeat is an application for anyone with the age betwe
 
 Ofcourse, the first thing you see is the home page. On this page the user will get a short introduction about the website and hopefully this will trigger the user to sign up. Or login if he/she already has an account. 
 
-    afbeelding home page, afbeelding login naast elkaar
+   <img src="https://github.com/jessiemasonx/images/blob/master/home.png" width="250"> <img src="https://github.com/jessiemasonx/images/blob/master/login.png" width="250">
     
-If the user decides to sing up, these are the pages he'll have to go through. The first 3 pages are questions about music, and on the last page the user puts the general information. After finishing these steps the user has signed up and the account is made.
+If the user decides to sign up, these are the pages he'll have to go through. The first 3 pages are questions about music, and on the last page the user puts the general information. After finishing these steps the user has signed up and the account is made.
 
-    afbeelding 1e vraag, 2e vraag, 3e vraag en inschrijf formulier
+<img src="https://github.com/jessiemasonx/images/blob/master/genre.png" width="210"> <img src="https://github.com/jessiemasonx/images/blob/master/artiest.png" width="210"> <img src="https://github.com/jessiemasonx/images/blob/master/album.png" width="210"> <img src="https://github.com/jessiemasonx/images/blob/master/signup.png" width="210">
 
+After this, the user has made an account. Yay! The user will then login to his account, and go to the page where he can see all his matches. This is a list of people who 'match' with your interests. From there you can go and take a look at someone's account. __Important:__ you won't be able to see someone's profile picture until you've been talking to them for a couple of days. A little notification about that pops up on the matches page so the user knows. From the matches page the user can take a look at their profiles and send them a message.
 
-
+<img src="https://github.com/jessiemasonx/images/blob/master/matchespopup.png" width="250"> <img src="https://github.com/jessiemasonx/images/blob/master/matches.png" width="250"> <img src="https://github.com/jessiemasonx/images/blob/master/match.png" width="246">
+       
+By pressing the 'mijn profiel' button, the user can view his own profile. If the user isn't happy about his profile, or just wants to change it, he or she can do this by pressing the 'wijzig profiel'. You can also delete your account by pressing 'verwijder mijn profiel'.
+ 
+<img src="https://github.com/jessiemasonx/images/blob/master/mijnprofiel.png" width="250">
+    
 ## How to install
 
 To install it, you will need to follow a few steps.
