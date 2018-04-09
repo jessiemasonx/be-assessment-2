@@ -15,7 +15,17 @@ This is an application for anyone with the age between 18 and 30 who is looking 
 
 ## Description
 
-As I mentioned before, HeartBeat is an application for anyone with the age between 18 and 30 who is looking for someone to spend the rest of his/her life with, and it focuses on someone's taste in music. While that's been said, let's take a look at every page of the website and see what you can do there. I'll give you a little tour around 
+As I mentioned before, HeartBeat is an application for anyone with the age between 18 and 30 who is looking for someone to spend the rest of his/her life with, and it focuses on someone's taste in music. While that's been said, let's take a look at every page of the website and see what you can do there. I'll give you a little tour around.
+
+Ofcourse, the first thing you see is the home page. On this page the user will get a short introduction about the website and hopefully this will trigger the user to sign up. Or login if he/she already has an account. 
+
+    afbeelding home page, afbeelding login naast elkaar
+    
+If the user decides to sing up, these are the pages he'll have to go through. The first 3 pages are questions about music, and on the last page the user puts the general information. After finishing these steps the user has signed up and the account is made.
+
+    afbeelding 1e vraag, 2e vraag, 3e vraag en inschrijf formulier
+
+
 
 ## How to install
 
