@@ -10,25 +10,24 @@
 </head>
 <body>
 	<header>
-			<% if (session && session.loggedIn) { %>
-	<img id="hamburger" src="styles/images/menu.png" alt="menu">
-		<% } %>
-		<h2>HeartBeat</h2>
-			<% if (session && session.loggedIn) { %>
-		<a href="/logout">Log uit</a>
-		<% } %>
+		<% if (session && session.loggedIn) { %>
+	<img id="hamburger" src="../styles/images/menu.png" alt="menu">
+	<% } %>
+	<h2>HeartBeat</h2>
+		<% if (session && session.loggedIn) { %>
+	<a href="/logout">Log uit</a>
+	<% } %>
 		</header>
 		<div id="nav">
 			<a href="/matches">Matches</a>
 			<a href="/">Home</a>
-		<% if (session && session.loggedIn) { %>
-			<a href="/myprofile/ <%= session.user.id %>">Profiel</a>
-		<% } %>
+			<a href="/myprofile">Profiel</a>
 			<a href="/login">Login</a>
 		</div>
 	<main>
-		<h1>Profiel Wijzigen</h1>
-		<form action="/update/<%= session.user.id %>" method="POST">
+		<h1>Inschrijven</h1>
+		<form action="/register" method="POST" enctype="multipart/form-data">
+			<label>Afbeelding<input name="img" type="file" accept="image/*"></label>
 			Ik ben een
 			<label for="man">
 				<input type="radio" id="man" value='male' name="gender">Man</label>

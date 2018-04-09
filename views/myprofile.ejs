@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../styles/styles.css">
+	<link rel="stylesheet" href="../styles/profiel.css">
+<title>HeartBeart</title>
+</head>
+<body>
+	<header>
+    <% if (session && session.loggedIn) { %>
+  <img id="hamburger" src="../styles/images/menu.png" alt="menu">
+  <% } %>
+  <h2>HeartBeat</h2>
+    <% if (session && session.loggedIn) { %>
+  <a href="/logout">Log uit</a>
+  <% } %>
+		</header>
+		<div id="nav">
+			<a href="/matches">Matches</a>
+			<a href="/">Home</a>
+			<a href="/myprofile/ <%= session.user.id %>">Profiel</a>
+			<a href="/login">Login</a>
+		</div>
+	<main>
+		<% if (data.img) { %>
+<img src="../styles/images/uploads/<%= data.img %>" alt="profielfoto">
+<% } %>
+<h1><%= data.name %></h1>
+<p>Leeftijd: <%= data.age %> jaar</p>
+<p>Provincie: <%= data.place %></p>
+<h3>Muziek</h3>
+<section><img src="../styles/images/genre/pop.jpg" alt="pop">
+<img src="../styles/images/artiest/ed%20sheeran.jpg" alt="edsheeran">
+<img src="../styles/images/album/multiply.png" alt="edsheeran"></section>
+<a href="/updatePage">wijzig profiel</a>
+
+<button data-id='<%= session.user.id %>' id='delete'>verwijder profiel</button>
+<!-- als je een attribute maakt moet er data voor staan -->
+
+	</main>
+	<script src="../java/java2.js"></script>
+  <script src='../java/delete.js'></script>
+</body>
+</html>

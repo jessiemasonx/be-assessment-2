@@ -9,13 +9,20 @@
 </head>
 <body>
 	<header>
-	<!-- <img id="hamburger" src="styles/images/menu.png" alt="menu"> -->
+			<% if (session && session.loggedIn) { %>
+	<img id="hamburger" src="styles/images/menu.png" alt="menu">
+		<% } %>
 		<h2>HeartBeat</h2>
+			<% if (session && session.loggedIn) { %>
+		<a href="/logout">Log uit</a>
+		<% } %>
 		</header>
 		<div id="nav">
 			<a href="/matches">Matches</a>
 			<a href="/">Home</a>
-			<a href="/profile">Profiel</a>
+		<% if (session && session.loggedIn) { %>
+			<a href="/myprofile/ <%= session.user.id %>">Profiel</a>
+		<% } %>
 			<a href="/login">Login</a>
 		</div>
 	<main>

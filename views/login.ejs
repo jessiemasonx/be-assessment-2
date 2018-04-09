@@ -22,7 +22,7 @@
 			<a href="/matches">Matches</a>
 			<a href="/">Home</a>
 			<% if (session && session.loggedIn) { %>
-			<a href="/myprofile/ <%= session.user.id %>">Profiel</a>
+				<a href="/myprofile/ <%= session.user.id %>">Profiel</a>
 			<% } %>
 			<a href="/login">Login</a>
 		</div>

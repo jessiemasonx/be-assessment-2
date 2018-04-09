@@ -9,16 +9,20 @@
 </head>
 <body>
 	<header>
+			<% if (session && session.loggedIn) { %>
 	<img id="hamburger" src="styles/images/menu.png" alt="menu">
+		<% } %>
 		<h2>HeartBeat</h2>
+			<% if (session && session.loggedIn) { %>
 		<a href="/logout">Log uit</a>
+		<% } %>
 		</header>
 		<div id="nav">
 			<a href="/matches">Matches</a>
 			<a href="/">Home</a>
-			<% if (session && session.loggedIn) { %>
-			<a href="/myprofile/<%= session.user.id %>">Profiel</a>
-			<% } %>
+		<% if (session && session.loggedIn) { %>
+			<a href="/myprofile/ <%= session.user.id %>">Profiel</a>
+		<% } %>
 			<a href="/login">Login</a>
 		</div>
 	<button id="infoknop"><img src="styles/images/info.png" alt="asd"></button>
@@ -34,7 +38,7 @@
 		<img src="../styles/images/uploads/<%= match.img %>" alt="profielfoto">
 		<% } else { %>
 	<img src="styles/images/profile/profileblank.png" alt="persoon">
-		<% } %>	
+		<% } %>
 	<p><%= match.name %></p><p><%= match.age %> jaar</p>
 	</a>
 	<% }) %>
