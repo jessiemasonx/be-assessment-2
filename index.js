@@ -407,3 +407,12 @@ function update(req, res) {
       res.redirect("/myprofile/" + req.session.user.id) // go to my profile
     }
   }
+
+
+// the sources I used most for this code are classmates that helped me
+// I did everything together with Nina and Linda, because it was too difficult to do it my self
+// Only in the last week I was finally able to do things by myself
+// Wouter Lem helped a lot with explaining what I had to do
+// I also had help from Folkert-Jan and Dennis
+// I fount the mySQL example on github very usefull too
+// https://github.com/cmda-be/course-17-18/tree/master/examples/mysql-server
