@@ -110,7 +110,8 @@ function signup(req, res) {
 
 // this function is invoked when someone submits the signup form
 // I used https://github.com/cmda-be/course-17-18/blob/master/examples/mysql-server/index.js
-// I also used a conversation in slack in #backend
+// I also used a conversation in slack in between Deanna and Titus #backend
+// And I used Deanna's repository https://github.com/deannabosschert/freshstart
 function register(req, res) {
   // you're inserting all these inputs from the form into the table
   connection.query("INSERT INTO accounts SET ?", {
@@ -144,14 +145,12 @@ function register(req, res) {
 function login(req, res) {
   var id = req.params.id
   connection.query("SELECT * FROM accounts", onDone)
-  // select everything from the table accounts, after that invoke function onDone
-
+  // select everything from the table accounts, and after that invoke function onDone
   // if there is an error
   function onDone(err, data) {
-    // this makes sure you will also go to error.ejs if there is no data, so if nothing is filled in in the form
-    // creds to Wouter Lem
-    if (err || data.length === 0) {
-      // acount niet gevonden
+    // Wouter Lem helped me with this
+    if (err) { // if there's an error
+      // account not found
       console.log("Error: ", err)
       return res.status(404).render("error.ejs", { // render error.ejs
         id: 404,
@@ -169,8 +168,9 @@ function login(req, res) {
 }
 
 // this function is invoked when the user submits the login form
+// Wouter Lem helped me with this function
 function handleLogin(req, res, err) {
-  var body = Object.assign({}, req.body) // zet alles uit de form in een object
+  var body = Object.assign({}, req.body) // put everything from the form in an object
   var user // declare var user but don't give it a value
   connection.query("SELECT * FROM accounts WHERE email = ?", body.email, function(err, users) {
   // select row from table accounts where the email is the same as the email filled in in the form
@@ -193,6 +193,7 @@ function handleLogin(req, res, err) {
 }
 
 // this function is invoked when someone goes to the matches page
+// I did this function by myself
 function matches(req, res, users) {
   var user = users[0]
   // if logged in user likes female
@@ -386,6 +387,9 @@ function updatePage(req, res) {
 }
 
 // this function is invoked when someone submits 'update account' form
+// I asked for help in slack and Titus sent me the following link
+// https://github.com/mysqljs/mysql#escaping-query-values
+// I used this link for the connection.query part
 function update(req, res) {
   var id = req.params.id // id of logged in person
   var body = req.body // everything from the form
@@ -398,14 +402,15 @@ function update(req, res) {
           description: "Niet gevonden.",
           map: "../"
         })
-      }
-      console.log("Inserted!")
+      } else {
+      console.log("Updated!")
       var locals = {
         data: data,
         session: req.session
       }
       res.redirect("/myprofile/" + req.session.user.id) // go to my profile
     }
+  }
   }
 
 

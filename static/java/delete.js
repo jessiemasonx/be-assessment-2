@@ -1,4 +1,6 @@
-
+// Wouter lem helped with this file
+// and the following link
+// https://github.com/cmda-be/course-17-18/blob/master/examples/mysql-server/static/index.js
 
 var deletebutton = document.querySelector("#delete")
 
